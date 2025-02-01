@@ -2,15 +2,9 @@
 
 Your AI-Powered Classical Dance Buddy
 
-## Getting Started
+### Preview
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![1](preview/1.jpeg)
+![2](preview/2.jpeg)
+![3](preview/3.jpeg)
+![4](preview/4.jpeg)
