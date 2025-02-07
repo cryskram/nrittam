@@ -40,11 +40,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     DanceForm(
                       imagePath: "assets/images/forms/adavu2.png",
-                      formName: "Nata Adavu",
+                      formName: "Tatta Adavu",
                     ),
                     DanceForm(
                       imagePath: "assets/images/forms/adavu1.png",
-                      formName: "Tatta Adavu",
+                      formName: "Nata Adavu",
                     ),
                     DanceForm(
                       imagePath: "assets/images/forms/adavu3.png",
