@@ -29,7 +29,7 @@ class OnBoardingScreen extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.of(context).pushNamed("/register");
+                Navigator.of(context).pushNamed("/role");
               },
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.75,

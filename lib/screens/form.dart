@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:nrittam/constants.dart';
+import 'package:nrittam/screens/results.dart';
 
 class FormSpecificScreen extends StatefulWidget {
   const FormSpecificScreen({super.key});
@@ -13,6 +15,17 @@ class _FormSpecificScreenState extends State<FormSpecificScreen> {
   bool _postureSwitch = false;
   bool _timingSwitch = false;
   int _speedPick = 0;
+
+  final ImagePicker _picker = ImagePicker();
+
+  void _startVideoRecording() async {
+    final XFile? video = await _picker.pickVideo(source: ImageSource.camera);
+
+    if (video != null) {
+      // Navigate to the results screen (no need to save the file)
+      Navigator.of(context).pushNamed("/result");
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -295,7 +308,7 @@ class _FormSpecificScreenState extends State<FormSpecificScreen> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: _startVideoRecording,
                   child: IntrinsicWidth(
                     child: Container(
                       decoration: BoxDecoration(
